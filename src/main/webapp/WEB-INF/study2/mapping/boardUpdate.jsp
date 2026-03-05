@@ -6,7 +6,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>boardUpdate.jsp</title>
+	<title>hoewonInput.jsp</title>
 	<%@ include file="/include/bs5.jsp" %>
 </head>
 <body>
@@ -14,7 +14,7 @@
 <jsp:include page="/include/nav.jsp" />
 <p><br/></p>
 <div class="container">
-	<h2>게시판 자료 수정</h2>
+	<h2 class="text-center mb-3">회 원 등 록</h2>
 	<hr/>
 	<div>메세지 : ${msg}</div>
 	<hr/>

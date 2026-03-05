@@ -16,7 +16,7 @@ public class Main extends HttpServlet {
 	@Override
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// 초기화면에 메인이미지 5장을 랜덤하게 보여주기....
-		
+		System.out.println("main......");
 		String viewPage = "/main/main.jsp";
 		RequestDispatcher dispatcher = request.getRequestDispatcher(viewPage);
 		dispatcher.forward(request, response);

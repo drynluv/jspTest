@@ -37,7 +37,6 @@
 	    </tr>
 	  </table>
   </form>
-  <hr/>
 	<div><a href="____.do" class="btn btn-success">돌아가기</a></div>
 </div>
 <p><br/></p>
