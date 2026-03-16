@@ -35,3 +35,15 @@ select * from member;
 select count(*) as cnt from member;
 
 select count(*) as female from member where gender = '여자';
+
+select now(); /*현재 날짜와 시간을 출력 */
+
+select curdate(); /* 현재 날짜만 출력 */
+
+select date(lastDate) from member; /* member테이블의 lastDate필드를 날짜만 출력 */ 
+
+select idx, lastDate, curdate(), date(lastDate)=curdate() from member;
+
+update member set todayCnt = if(date(lastDate)=curdate(),todayCnt+1, 1), lastDate=now() where mid = 'admin';
+
+update member set point = point + 10 where mid = 'admin' and todayCnt <= 3;

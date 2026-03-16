@@ -69,6 +69,7 @@
 					      <li><a class="dropdown-item" href="AjaxForm2.st">AJax연습2</a></li>
 					      <li><a class="dropdown-item" href="UUIDForm.st">UUID연습</a></li>
 					      <li><a class="dropdown-item" href="ModalForm.st">Modal연습</a></li>
+					      <li><a class="dropdown-item" href="FileUploadForm.st">파일업로드 연습</a></li>
 					    </ul>
 					  </div>
 				  </li>
@@ -80,7 +81,7 @@
 				      <li><a class="dropdown-item" href="MemberMain.mem">회원메인방</a></li>
 				      <c:if test="${sLevel != 1}"><li><a class="dropdown-item" href="MemberList.mem">회원리스트</a></li></c:if>
 				      <li><a class="dropdown-item" href="MemberPwdCheck.mem">비밀번호수정</a></li>
-				      <li><a class="dropdown-item" href="MemberUpdate.mem">회원정보수정</a></li>
+				      <li><a class="dropdown-item" href="MemberPwdCheck.mem?flag=m">회원정보수정</a></li>
 				      <li><a class="dropdown-item" href="javascript:memberDeleteCheck()">회원탈퇴</a></li>
 				      <c:if test="${sLevel == 0}"><li><a class="dropdown-item" href="AdminMain.ad">관리자메뉴</a></li></c:if>
 				    </ul>

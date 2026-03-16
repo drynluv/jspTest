@@ -14,7 +14,7 @@ public class NickNameSearchCommand implements MemberInterface {
 	
 		MemberDAO dao = new MemberDAO();
 		
-		MemberVO vo = dao.getNickNameSearch(nickName);
+		MemberVO vo = dao.getMemberNickNameCheck(nickName);
 		
 		String str = "0";
 		if(vo.getNickName() != null) str = "1";
