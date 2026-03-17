@@ -21,9 +21,9 @@
 		  let idChecked = false;
 	    let nickChecked = false;
 	  
-		// 정규식을 사용하세요....
-		// 안적힌건 전부 공백
-		function fCheck() {
+			// 정규식을 사용하세요....
+			// 안적힌건 전부 공백
+			function fCheck() {
 			
       /* if (!nickChecked) {
          alert("닉네임 중복체크를 해주세요.");

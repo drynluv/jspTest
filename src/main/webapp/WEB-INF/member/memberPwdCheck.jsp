@@ -27,7 +27,6 @@
 					if(res == '0') alert("비밀번호 오류\n비밀번호를 다시 입력하세요.");
 					else {
 						if(${param.flag == 'm'}) location.href='MemberUpdate.mem';
-						}
 						
 						let str = '';
 						str += '<hr/>';
@@ -42,7 +41,7 @@
 						str += '</div>';
 						$("#pwdForm").html(str);
 					}
-				}
+				},
 				error : () => alert("전송오류")
 			});
 		}

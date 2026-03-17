@@ -19,8 +19,8 @@ public class EncodingFilter implements Filter {
 		HttpServletRequest req = (HttpServletRequest) request;
 		String uri = req.getRequestURI();
 		
-		if(!uri.contains("/css/") && !uri.contains("/js/")) {
-			request.setCharacterEncoding("utf-8");
+		if(!uri.contains("/css/") && !uri.contains("/js/") && !uri.contains("/images/")) {
+			request.setCharacterEncoding("utf-8"); 
 			response.setContentType("text/html; charset=utf-8");
 		}
 	

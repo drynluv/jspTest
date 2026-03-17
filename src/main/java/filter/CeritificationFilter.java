@@ -27,17 +27,19 @@ public class CeritificationFilter implements Filter {
 		
 		String uri = req.getRequestURI();
 		
-		if(!uri.contains("/Main") && !uri.contains("/guest/*") && !uri.contains("/login/*")) {
-			if(!uri.contains("/css/") && !uri.contains("/js/")) {
+		if(!uri.contains("/") && !uri.contains("/Main") && !uri.contains("/guest/") && !uri.contains("/login/")) {
+			System.out.println("인증창 통과중....");
+			if(!uri.contains("/css/") && !uri.contains("/js/") && !uri.contains("/images/")) {
 				request.setCharacterEncoding("utf-8");
 				response.setContentType("text/html; charset=utf-8");
 			}
 			if(login == null || login.equals("")) {
-			PrintWriter out = response.getWriter();
-			out.println("<script>");
-			out.println("alert('로그인 후 사용하세요.');");
-			out.println("location.href='"+req.getContextPath()+"/Login?loginSw=main_Login'");
-			out.println("</script>");
+				PrintWriter out = response.getWriter();
+				System.out.println("로그인 실패통과....");
+				out.println("<script>");
+				out.println("alert('로그인후 사용하세요.');");
+				out.println("location.href='"+req.getContextPath()+"/login/Login?loginSw=main_Login'");
+				out.println("</script>");
 			}
 		}
 		
